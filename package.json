@@ -1,7 +1,9 @@
 {
-  "name": "sql-anonymizer",
-  "version": "1.0.0",
+  "name": "@lab34/sql-anonymizer",
+  "version": "0.8.0",
   "main": "cli.js",
+  "author": "Jose Constela <jose@lab34.es>",
+  "license": "MIT",
   "bin": {
     "sql-anonymizer": "./cli.js"
   },
@@ -16,13 +18,11 @@
     "data",
     "privacy"
   ],
-  "author": "",
-  "license": "MIT",
   "description": "A tool to anonymize sensitive data in SQL files",
   "dependencies": {
     "yargs": "^17.7.2"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=20.0.0"
   }
 }

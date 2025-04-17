@@ -177,7 +177,7 @@ async function processFile() {
         lineNumber++;
         
         // Log every 100 lines for debugging
-        if (lineNumber % 100 === 0) {
+        if (lineNumber % 10000 === 0) {
             console.log(`DEBUG: Reading line ${lineNumber}`);
         }
         
@@ -276,7 +276,7 @@ async function processFile() {
                 const valuesMatch = statement.match(/\sVALUES\s*\(/i);
                 if (!valuesMatch || typeof valuesMatch.index === 'undefined') {
                      // If VALUES isn't found, it's not a standard INSERT we can process
-                     console.warn(`WARN: Stmt ending line ${endLineNumber}: Matched INSERT pattern but could not find VALUES keyword. Skipping.`);
+                    //  console.warn(`WARN: Stmt ending line ${endLineNumber}: Matched INSERT pattern but could not find VALUES keyword. Skipping.`);
                      writer.write(statement);
                      statementsWithSkippedAnonymization++;
                      return; // Skip this statement
@@ -316,7 +316,7 @@ async function processFile() {
                                 // SAFETY CHECK: Only anonymize if it looks like a string literal or is NULL.
                                 if (originalValue.startsWith("'") || originalValue.toUpperCase() === 'NULL') {
                                     const newValue = generateRandomQuotedString();
-                                    console.log(`DEBUG: Stmt line ${endLineNumber}: Anonymizing index ${index} ('${originalValue}' -> '${newValue}')`);
+                                    // console.log(`DEBUG: Stmt line ${endLineNumber}: Anonymizing index ${index} ('${originalValue}' -> '${newValue}')`);
                                     values[index] = newValue; // Replace value in the array
                                     valueSetModified = true;
                                     overallModified = true; // Mark the whole statement as modified
