@@ -33,19 +33,13 @@ npm install sql-anonymizer
 ### Command Line
 
 ```bash
-sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
+npx @lab34/sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
 ```
 
 Or if installed locally:
 
 ```bash
-npx @lab34/sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
-```
-
-On Windows, you can also use:
-
-```cmd
-node cli.js -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
+sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
 ```
 
 ### Options
