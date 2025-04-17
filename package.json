@@ -1,0 +1,18 @@
+{
+  "name": "sql-anonymizer",
+  "version": "1.0.0",
+  "main": "cli.js",
+  "bin": {
+    "sql-anonymizer": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
