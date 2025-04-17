@@ -1,6 +1,6 @@
 {
   "name": "@lab34/sql-anonymizer",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "main": "cli.js",
   "author": "Jose Constela <jose@lab34.es>",
   "license": "MIT",
