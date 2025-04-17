@@ -64,22 +64,10 @@ sql-anonymizer -i data.sql -o anonymized.sql -t users -c 2,3,5
 
 This will anonymize columns 2, 3, and 5 in all INSERT statements for the "users" table in data.sql and save the result to anonymized.sql.
 
-### Using npm scripts
-
-The package includes some predefined scripts:
-
-```bash
-# Run with default settings
-npm start -- -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
-
-# Run the example
-npm run example
-```
-
 ## How It Works
 
 1. The tool parses the input SQL file and identifies INSERT statements for the specified table.
-2. For each matching INSERT statement, it extracts the values and replaces the specified columns with random strings.
+2. For each matching INSERT statement, it extracts the values and replaces the specified columns with *random strings*.
 3. The anonymized SQL is written to the output file, preserving the original structure.
 
 ## Notes for Windows Users
