@@ -39,7 +39,7 @@ sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <column-numbe
 Or if installed locally:
 
 ```bash
-npx sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
+npx @lab34/sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
 ```
 
 On Windows, you can also use:
