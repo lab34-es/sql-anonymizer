@@ -10,36 +10,12 @@ A command-line tool to anonymize sensitive data in SQL files. This tool works on
 - Cross-platform compatibility (Windows, macOS, Linux)
 - Configurable column selection
 
-## Installation
-
-### Prerequisites
-
-- Node.js 20.0.0 or higher
-
-### Global Installation
-
-```bash
-npm install -g sql-anonymizer
-```
-
-### Local Installation
-
-```bash
-npm install sql-anonymizer
-```
-
 ## Usage
 
 ### Command Line
 
 ```bash
 npx @lab34/sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
-```
-
-Or if installed locally:
-
-```bash
-sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <column-numbers>
 ```
 
 ### Options
