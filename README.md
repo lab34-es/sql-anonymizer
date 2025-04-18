@@ -1,6 +1,6 @@
 # SQL Anonymizer
 
-A command-line tool to anonymize sensitive data in SQL files. This tool works on both Windows and Unix-like systems.
+A command-line tool to anonymize sensitive data in large SQL files, using streams. This tool works on both Windows and Unix-like systems.
 
 ## Features
 
@@ -29,7 +29,7 @@ npx @lab34/sql-anonymizer -i <input-file> -o <output-file> -t <table-name> -c <c
 ### Example
 
 ```bash
-sql-anonymizer -i data.sql -o anonymized.sql -t users -c 2,3,5
+npx @lab34/sql-anonymizer -i data.sql -o anonymized.sql -t users -c 2,3,5
 ```
 
 This will anonymize columns 2, 3, and 5 in all INSERT statements for the "users" table in data.sql and save the result to anonymized.sql.
